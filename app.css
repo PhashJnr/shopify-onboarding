@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* NAV SECTION */
+
+.navbar {
+  background: #1a1a1a;
+  padding: 8px 32px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.search-input {
+  width: 480px;
+  border: 1px #616161 solid;
+  padding: 8px;
+  border-radius: 8px;
+  padding: 10px 36px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.search-input:hover {
+  border: 1px #e1e1e1 solid;
+}
+
+.search-input:focus {
+  outline: 2px #ffffff solid;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification,
+.username-display,
+.search-input {
+  background: #303030;
+  border-radius: 8px;
+}
+
+.notification {
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.notification:hover,
+.username-display:hover {
+  background: #616161;
+}
+
+.notification:focus,
+.username-display:focus {
+  /* background: #616161; */
+  outline: 2px #005bd3 solid;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+  transform: translateX(-50%);
+  width: 383px;
+  padding: 1rem;
+  border: 1px #dbdbdb solid;
+  border-radius: 14px;
+  display: none;
+  box-shadow: 0px 4px 8px 0px #0000000d;
+}
+
+.notification-icon {
+  /* padding: 8px; */
+  width: 20px;
+  height: 20px;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.alert p {
+  color: #303030;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.alert-icons {
+  display: flex;
+}
+
+.alert-icons img {
+  fill: #000000;
+  stroke: #000000;
+}
+
+.alert-message {
+  height: 50px;
+  background: #f1f1f1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-message p {
+  font-size: 13px;
+}
+
+.username-display {
+  color: #e3e3e3;
+  padding: 10px 2px 10px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: opacity 300ms ease-in, visibility 300ms ease-in;
+}
+
+.user-icon {
+  background: #36fba1;
+  color: #000000;
+  padding: 7px;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+.user-menu {
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+  transform: translateX(-60%);
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px 0px #0000000d;
+  border: 1px #dbdbdb solid;
+  border-radius: 14px;
+  padding: 6px, 0px, 6px, 30px;
+  display: none;
+  /* transition: all ease-out 10s; */
+}
+
+.user-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 14px; */
+  padding-bottom: 16px;
+  width: 100%;
+  padding: 10px;
+}
+
+.user-menu ul li {
+  padding: 6px;
+}
+
+.user-menu ul li a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+.user-menu ul li:hover {
+  background: #f1f1f1;
+  border-radius: 8px;
+  /* transition: all linear 0.3s; */
+}
+
+.user-menu ul li:focus {
+  outline: 2px #005bd3 solid;
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.user-menu ul:not(:last-child) {
+  border-bottom: 0.75px #e1e1e1 solid;
+}
+
+.user-menu-top li:first-child {
+  color: #303030;
+  font-size: 13px;
+  font-weight: 600;
+  background: #f1f1f1;
+  padding: 12px 6px;
+  border-radius: 8px;
+  margin-bottom: 3px;
+}
+
+.black-tick-icon {
+  float: right;
+  margin: auto 14px;
+}
+
+.user-menu-top li:first-child span {
+  margin-right: 8px;
+}
+
+.user-menu-top li:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu-top li:last-child,
+.user-menu-center,
+.user-menu-last {
+  font-size: 13px;
+  font-weight: 400;
+  color: #303030;
+  /* padding: 12px 10px; */
+}
+
+.user-menu-top li:last-child img {
+  height: 20px;
+}
+
+.user-menu-last li {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-menu-last li span:first-child {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.user-menu-last li span:last-child {
+  color: #616161;
+  font-size: 12px;
+}
+
+/* MAIN SECTION */

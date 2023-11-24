@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="app.css" rel="stylesheet" />
+
+    <title>Shopify Page</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="https://shopify.com">
+            <img src="src/icons/logo.svg" />
+          </a>
+        </div>
+
+        <div class="search-bar">
+          <input class="search-input" type="search" placeholder="Search" />
+          <img
+            class="search-icon"
+            src="src/icons/search-icon.svg"
+            alt="search-icon"
+          />
+        </div>
+
+        <div class="user-profile">
+          <div
+            class="notification dropdownButton"
+            tabindex="0"
+            data-target="dropdown1"
+          >
+            <img
+              class="notification-icon"
+              src="src/icons/notification.svg"
+              alt="notification icon"
+            />
+
+            <div
+              class="notification-dropdown dropdownContent"
+              id="dropdown1"
+              aria-labelledby="dropdown1"
+            >
+              <div class="notification-dropdown-wrapper">
+                <div class="alert">
+                  <p>Alerts</p>
+                  <div class="alert-icons">
+                    <img src="src/icons/filter-icon.svg" alt="filter icon" />
+                    <img
+                      src="src/icons/mark-as-read-icon.svg"
+                      alt="mark-as-read-icon"
+                      class="icons"
+                    />
+                  </div>
+                </div>
+                <div class="alert-message">
+                  <p>Alerts about your store and account will show here</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="username-display dropdownButton"
+            data-target="dropdown2"
+            tabindex="0"
+          >
+            <p class="user-name">
+              Davii Collections<span class="user-icon">DC</span>
+            </p>
+
+            <div
+              class="user-menu dropdownContent"
+              id="dropdown2"
+              aria-labelledby="dropdown2"
+            >
+              <ul class="user-menu-top">
+                <li tabindex="0">
+                  <span class="user-icon">DC</span
+                  ><a tabindex="-1" href="https://admin.shopify.com"
+                    >Davii Collections</a
+                  >
+                  <img
+                    src="src/icons/black-tick-icon.svg"
+                    alt="tick icon"
+                    class="black-tick-icon"
+                  />
+                </li>
+                <li tabindex="0">
+                  <img src="src/icons/store-logo.svg" />
+                  <a tabindex="-1" href="https://admin.shopify.com">
+                    All Stores</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="user-menu-center">
+                <li tabindex="0">
+                  <a tabindex="-1" href="https://admin.shopify.com"
+                    >Help Center</a
+                  >
+                </li>
+                <li tabindex="0">
+                  <a tabindex="-1" href="https://admin.shopify.com"
+                    >Changelog</a
+                  >
+                </li>
+                <li tabindex="0">
+                  <a tabindex="-1" href="https://admin.shopify.com"
+                    >Community forums</a
+                  >
+                </li>
+                <li tabindex="0">
+                  <a href="https://admin.shopify.com" tabindex="-1"
+                    >Hire a Shopify partner</a
+                  >
+                </li>
+                <li tabindex="0">
+                  <a href="https://admin.shopify.com" tabindex="-1"
+                    >Keyboard shortcuts</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="user-menu-last">
+                <li tabindex="0">
+                  <span
+                    ><a href="https://admin.shopify.com" tabindex="-1"
+                      >David Micheal</a
+                    ></span
+                  >
+                  <span
+                    ><a href="https://admin.shopify.com" tabindex="-1"
+                      >davidmicheal@gmail.com</a
+                    ></span
+                  >
+                </li>
+                <li tabindex="0">
+                  <a href="https://admin.shopify.com" tabindex="-1"
+                    >Manage account</a
+                  >
+                </li>
+                <li tabindex="0">
+                  <a href="https://admin.shopify.com" tabindex="-1">Log out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main class="main"></main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
